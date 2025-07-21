@@ -1,5 +1,14 @@
+# Force Python language
+*.py linguist-language=Python
+*.ipynb linguist-language=Python
+
+# Exclude virtual environments and third-party folders
+env/** linguist-vendored
+venv/** linguist-vendored
+__pycache__/** linguist-vendored
+third_party/** linguist-vendored
+
+# Disable detection of C/C++
 *.c linguist-detectable=false
 *.cpp linguist-detectable=false
 *.h linguist-detectable=false
-
-*.py linguist-language=Python
